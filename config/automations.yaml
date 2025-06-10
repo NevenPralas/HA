@@ -1,0 +1,103 @@
+- id: '1748267700355'
+  alias: Sunce automation
+  description: Notifikacija kad sunce izađe
+  triggers:
+  - trigger: sun
+    event: sunrise
+    offset: '0'
+  conditions: []
+  actions:
+  - action: notify.persistent_notification
+    metadata: {}
+    data:
+      message: "Sunce je izašlo! \U0001F305"
+  mode: single
+- id: '1748336717573'
+  alias: MQTT automation
+  description: Prima MQTT poruke i prikazuje notifikacije
+  triggers:
+  - trigger: mqtt
+    topic: homeassistant/notify
+  conditions: []
+  actions:
+  - action: notify.persistent_notification
+    metadata: {}
+    data:
+      message: '{{ trigger.payload }}'
+  mode: single
+- id: virtualno_svjetlo_on_sunset
+  alias: Upali virtualno svjetlo kad sunce zađe
+  description: Upali virtualno svjetlo 30 minuta prije zalaska sunca
+  triggers:
+  - event: sunset
+    offset: 00:00:00
+    trigger: sun
+  actions:
+  - target:
+      entity_id: light.virtualno_svjetlo
+    action: light.turn_on
+    data: {}
+  mode: single
+- id: virtualno_svjetlo_off_sunrise
+  alias: Ugasi virtualno svjetlo kad sunce izađe
+  description: Ugasi virtualno svjetlo 30 minuta nakon izlaska sunca
+  triggers:
+  - event: sunrise
+    offset: 00:00:00
+    trigger: sun
+  actions:
+  - target:
+      entity_id: light.virtualno_svjetlo
+    action: light.turn_off
+    data: {}
+  mode: single
+- id: '1748400000001'
+  alias: Turn on light at sunset
+  description: Pali svjetlo kad se smrkne
+  triggers:
+  - trigger: sun
+    event: sunset
+    offset: 00:00:00
+  conditions: []
+  actions:
+  - action: input_boolean.turn_on
+    metadata: {}
+    target:
+      entity_id: input_boolean.test_light
+    data: {}
+  mode: single
+- id: '1748400000002'
+  alias: Turn off light at sunrise
+  description: Gasi svjetlo kad svane
+  triggers:
+  - trigger: sun
+    event: sunrise
+    offset: 00:00:00
+  conditions: []
+  actions:
+  - action: input_boolean.turn_off
+    metadata: {}
+    target:
+      entity_id: input_boolean.test_light
+    data: {}
+  mode: single
+- alias: Pošalji sve stateove na aplikaciju
+  trigger:
+    platform: time_pattern
+    seconds: /10
+  action:
+  - service: rest_command.send_all_states
+  id: d1196845c3cd44ef92f44a1750f2f619
+- id: '1749540199971'
+  alias: MQTT switch
+  description: ''
+  triggers:
+  - trigger: mqtt
+    topic: homeassistant/switch
+  conditions: []
+  actions:
+  - action: notify.persistent_notification
+    metadata: {}
+    data:
+      message: '{{ trigger.payload }}'
+  mode: single

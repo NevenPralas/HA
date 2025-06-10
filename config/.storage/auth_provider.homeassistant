@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "auth_provider.homeassistant",
+  "data": {
+    "users": [
+      {
+        "username": "neven_pralas",
+        "password": "JDJiJDEyJGNIMHA2VEU0S3hPN0FrSmtpVmlQMnVWTi9NZ1RLekIuZTJrczlGMThUa3hpbS5VMWw0Nm02"
+      },
+      {
+        "username": "vilim_ivankovic",
+        "password": "JDJiJDEyJHBQZFFEWDlUSllBSDk4VTc5RVZRZC5Gcks3bGZwRzhVeEVIdm5EWk41blZyd0ZoL3d2Z1hl"
+      }
+    ]
+  }
+}

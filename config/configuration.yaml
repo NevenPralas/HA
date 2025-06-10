@@ -1,0 +1,77 @@
+# Loads default set of integrations. Do not remove.
+default_config:
+# Load frontend themes from the themes folder
+frontend:
+  themes: !include_dir_merge_named themes
+# HTTP configuration for external access
+http:
+  server_host: 0.0.0.0
+  server_port: 8123
+mqtt:
+  sensor:
+    - name: "Vlaga zraka"
+      state_topic: "home/sensor/air_humidity"
+      qos: 1
+      unit_of_measurement: "%"
+      value_template: "{{ value | float }}"
+    - name: "Temperatura zraka"
+      state_topic: "home/sensor/air_temperature"
+      qos: 1
+      unit_of_measurement: "°C"
+      value_template: "{{ value | float }}"
+    - name: "Device ID"
+      state_topic: "home/sensor/device_id"
+      qos: 1
+      value_template: "{{ value | int }}"
+    # Dodaj senzore za kolegin servo motor
+    - name: "Servo Pozicija"
+      state_topic: "homeassistant/motor/state"
+      qos: 1
+      unit_of_measurement: "°"
+      value_template: "{{ value | int }}"
+  light:
+    - name: "Navodnjavanje"
+      state_topic: "homeassistant/light/state"
+      command_topic: "homeassistant/light"
+      qos: 1
+      payload_on: "on"
+      payload_off: "off"
+      optimistic: true
+    - name: "Virtualno svjetlo"
+      state_topic: "home/virtualno_svjetlo/state"
+      command_topic: "home/virtualno_svjetlo/set"
+      qos: 1
+      payload_on: "on"
+      payload_off: "off"
+      optimistic: true
+  number:
+    - name: "Servo Motor"
+      state_topic: "homeassistant/motor/state"
+      command_topic: "homeassistant/motor"
+      qos: 1
+      min: 0
+      max: 90
+      step: 1
+      unit_of_measurement: "°"
+      optimistic: true
+rest_command:
+  send_all_states:
+    url: "http://192.168.119.59:3000/api/greenhouses/{{ states('sensor.device_id') | int }}/measurments"
+    method: POST
+    headers:
+      Content-Type: "application/json"
+    payload: >
+      {
+        "data":{
+        "temperature": {{ states('sensor.temperatura_zraka') | float(default=0) }},
+        "irrigation": {{ is_state('light.navodnjavanje', 'on') | lower }},
+        "moisture": {{ states('sensor.vlaga_zraka') | float(default=0) }},
+        "lighting": {{ is_state('light.virtualno_svjetlo', 'on') | lower }},
+        "window_open_percentage": {{ states('number.servo_tower_pro_sg90') | float(default=0) }},
+        "windows": {{ iif((states('number.servo_tower_pro_sg90') | float(default=0)) > 0, 'true', 'false') }}
+        }
+      }
+     
+automation: !include automations.yaml
+script:     !include scripts.yaml
+scene:      !include scenes.yaml

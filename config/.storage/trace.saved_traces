@@ -1,0 +1,1569 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "trace.saved_traces",
+  "data": {
+    "automation.1748336717573": [
+      {
+        "extended_dict": {
+          "last_step": "action/0",
+          "run_id": "e779c1d1feb09338986ab95fe9b28d0e",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2025-06-10T08:04:01.005573+00:00",
+            "finish": "2025-06-10T08:04:01.006236+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1748336717573",
+          "trigger": "mqtt topic homeassistant/notify",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2025-06-10T08:04:01.005612+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.mqtt_automation_2",
+                    "state": "on",
+                    "attributes": {
+                      "id": "1748336717573",
+                      "last_triggered": "2025-06-10T08:03:57.985877+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "friendly_name": "MQTT automation"
+                    },
+                    "last_changed": "2025-06-10T07:51:22.858475+00:00",
+                    "last_reported": "2025-06-10T08:03:57.986312+00:00",
+                    "last_updated": "2025-06-10T08:03:57.986312+00:00",
+                    "context": {
+                      "id": "01JXCDW4D100PN243DQ7JNFWAD",
+                      "parent_id": null,
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "mqtt",
+                    "topic": "homeassistant/notify",
+                    "payload": "ID: 1, Temp: 26.40 C, Hum: 29.00 %",
+                    "qos": 0,
+                    "description": "mqtt topic homeassistant/notify"
+                  }
+                }
+              }
+            ],
+            "action/0": [
+              {
+                "path": "action/0",
+                "timestamp": "2025-06-10T08:04:01.005896+00:00",
+                "changed_variables": {
+                  "context": {
+                    "id": "01JXCDW7BD3KKWAFB2H1QYXWA3",
+                    "parent_id": null,
+                    "user_id": null
+                  }
+                },
+                "result": {
+                  "params": {
+                    "domain": "notify",
+                    "service": "persistent_notification",
+                    "service_data": {
+                      "message": "ID: 1, Temp: 26.40 C, Hum: 29.00 %"
+                    },
+                    "target": {}
+                  },
+                  "running_script": false
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1748336717573",
+            "alias": "MQTT automation",
+            "description": "Prima MQTT poruke i prikazuje notifikacije",
+            "triggers": [
+              {
+                "trigger": "mqtt",
+                "topic": "homeassistant/notify"
+              }
+            ],
+            "conditions": [],
+            "actions": [
+              {
+                "action": "notify.persistent_notification",
+                "metadata": {},
+                "data": {
+                  "message": "{{ trigger.payload }}"
+                }
+              }
+            ],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01JXCDW7BD3KKWAFB2H1QYXWA3",
+            "parent_id": null,
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "action/0",
+          "run_id": "e779c1d1feb09338986ab95fe9b28d0e",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2025-06-10T08:04:01.005573+00:00",
+            "finish": "2025-06-10T08:04:01.006236+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1748336717573",
+          "trigger": "mqtt topic homeassistant/notify"
+        }
+      },
+      {
+        "extended_dict": {
+          "last_step": "action/0",
+          "run_id": "3075c84dc4e0c0756c0ca282e85ac674",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2025-06-10T08:04:04.037688+00:00",
+            "finish": "2025-06-10T08:04:04.038555+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1748336717573",
+          "trigger": "mqtt topic homeassistant/notify",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2025-06-10T08:04:04.037733+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.mqtt_automation_2",
+                    "state": "on",
+                    "attributes": {
+                      "id": "1748336717573",
+                      "last_triggered": "2025-06-10T08:04:01.005705+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "friendly_name": "MQTT automation"
+                    },
+                    "last_changed": "2025-06-10T07:51:22.858475+00:00",
+                    "last_reported": "2025-06-10T08:04:01.006161+00:00",
+                    "last_updated": "2025-06-10T08:04:01.006161+00:00",
+                    "context": {
+                      "id": "01JXCDW7BD3KKWAFB2H1QYXWA3",
+                      "parent_id": null,
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "mqtt",
+                    "topic": "homeassistant/notify",
+                    "payload": "ID: 1, Temp: 26.40 C, Hum: 29.00 %",
+                    "qos": 0,
+                    "description": "mqtt topic homeassistant/notify"
+                  }
+                }
+              }
+            ],
+            "action/0": [
+              {
+                "path": "action/0",
+                "timestamp": "2025-06-10T08:04:04.038019+00:00",
+                "changed_variables": {
+                  "context": {
+                    "id": "01JXCDWAA5W65134S8W3QT13Z8",
+                    "parent_id": null,
+                    "user_id": null
+                  }
+                },
+                "result": {
+                  "params": {
+                    "domain": "notify",
+                    "service": "persistent_notification",
+                    "service_data": {
+                      "message": "ID: 1, Temp: 26.40 C, Hum: 29.00 %"
+                    },
+                    "target": {}
+                  },
+                  "running_script": false
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1748336717573",
+            "alias": "MQTT automation",
+            "description": "Prima MQTT poruke i prikazuje notifikacije",
+            "triggers": [
+              {
+                "trigger": "mqtt",
+                "topic": "homeassistant/notify"
+              }
+            ],
+            "conditions": [],
+            "actions": [
+              {
+                "action": "notify.persistent_notification",
+                "metadata": {},
+                "data": {
+                  "message": "{{ trigger.payload }}"
+                }
+              }
+            ],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01JXCDWAA5W65134S8W3QT13Z8",
+            "parent_id": null,
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "action/0",
+          "run_id": "3075c84dc4e0c0756c0ca282e85ac674",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2025-06-10T08:04:04.037688+00:00",
+            "finish": "2025-06-10T08:04:04.038555+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1748336717573",
+          "trigger": "mqtt topic homeassistant/notify"
+        }
+      },
+      {
+        "extended_dict": {
+          "last_step": "action/0",
+          "run_id": "75f1c7651bddcf3d66cf37f97234f2f6",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2025-06-10T08:04:07.069057+00:00",
+            "finish": "2025-06-10T08:04:07.070076+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1748336717573",
+          "trigger": "mqtt topic homeassistant/notify",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2025-06-10T08:04:07.069098+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.mqtt_automation_2",
+                    "state": "on",
+                    "attributes": {
+                      "id": "1748336717573",
+                      "last_triggered": "2025-06-10T08:04:04.037825+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "friendly_name": "MQTT automation"
+                    },
+                    "last_changed": "2025-06-10T07:51:22.858475+00:00",
+                    "last_reported": "2025-06-10T08:04:04.038318+00:00",
+                    "last_updated": "2025-06-10T08:04:04.038318+00:00",
+                    "context": {
+                      "id": "01JXCDWAA5W65134S8W3QT13Z8",
+                      "parent_id": null,
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "mqtt",
+                    "topic": "homeassistant/notify",
+                    "payload": "ID: 1, Temp: 26.40 C, Hum: 29.00 %",
+                    "qos": 0,
+                    "description": "mqtt topic homeassistant/notify"
+                  }
+                }
+              }
+            ],
+            "action/0": [
+              {
+                "path": "action/0",
+                "timestamp": "2025-06-10T08:04:07.069392+00:00",
+                "changed_variables": {
+                  "context": {
+                    "id": "01JXCDWD8XZXGRKA9GR47Y7ZAZ",
+                    "parent_id": null,
+                    "user_id": null
+                  }
+                },
+                "result": {
+                  "params": {
+                    "domain": "notify",
+                    "service": "persistent_notification",
+                    "service_data": {
+                      "message": "ID: 1, Temp: 26.40 C, Hum: 29.00 %"
+                    },
+                    "target": {}
+                  },
+                  "running_script": false
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1748336717573",
+            "alias": "MQTT automation",
+            "description": "Prima MQTT poruke i prikazuje notifikacije",
+            "triggers": [
+              {
+                "trigger": "mqtt",
+                "topic": "homeassistant/notify"
+              }
+            ],
+            "conditions": [],
+            "actions": [
+              {
+                "action": "notify.persistent_notification",
+                "metadata": {},
+                "data": {
+                  "message": "{{ trigger.payload }}"
+                }
+              }
+            ],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01JXCDWD8XZXGRKA9GR47Y7ZAZ",
+            "parent_id": null,
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "action/0",
+          "run_id": "75f1c7651bddcf3d66cf37f97234f2f6",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2025-06-10T08:04:07.069057+00:00",
+            "finish": "2025-06-10T08:04:07.070076+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1748336717573",
+          "trigger": "mqtt topic homeassistant/notify"
+        }
+      },
+      {
+        "extended_dict": {
+          "last_step": "action/0",
+          "run_id": "f0c4c32ccd944d6e58595157305e902e",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2025-06-10T08:04:10.093915+00:00",
+            "finish": "2025-06-10T08:04:10.094732+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1748336717573",
+          "trigger": "mqtt topic homeassistant/notify",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2025-06-10T08:04:10.093961+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.mqtt_automation_2",
+                    "state": "on",
+                    "attributes": {
+                      "id": "1748336717573",
+                      "last_triggered": "2025-06-10T08:04:07.069190+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "friendly_name": "MQTT automation"
+                    },
+                    "last_changed": "2025-06-10T07:51:22.858475+00:00",
+                    "last_reported": "2025-06-10T08:04:07.069813+00:00",
+                    "last_updated": "2025-06-10T08:04:07.069813+00:00",
+                    "context": {
+                      "id": "01JXCDWD8XZXGRKA9GR47Y7ZAZ",
+                      "parent_id": null,
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "mqtt",
+                    "topic": "homeassistant/notify",
+                    "payload": "ID: 1, Temp: 26.40 C, Hum: 29.00 %",
+                    "qos": 0,
+                    "description": "mqtt topic homeassistant/notify"
+                  }
+                }
+              }
+            ],
+            "action/0": [
+              {
+                "path": "action/0",
+                "timestamp": "2025-06-10T08:04:10.094271+00:00",
+                "changed_variables": {
+                  "context": {
+                    "id": "01JXCDWG7DAAKDGG0ZTY43N2YS",
+                    "parent_id": null,
+                    "user_id": null
+                  }
+                },
+                "result": {
+                  "params": {
+                    "domain": "notify",
+                    "service": "persistent_notification",
+                    "service_data": {
+                      "message": "ID: 1, Temp: 26.40 C, Hum: 29.00 %"
+                    },
+                    "target": {}
+                  },
+                  "running_script": false
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1748336717573",
+            "alias": "MQTT automation",
+            "description": "Prima MQTT poruke i prikazuje notifikacije",
+            "triggers": [
+              {
+                "trigger": "mqtt",
+                "topic": "homeassistant/notify"
+              }
+            ],
+            "conditions": [],
+            "actions": [
+              {
+                "action": "notify.persistent_notification",
+                "metadata": {},
+                "data": {
+                  "message": "{{ trigger.payload }}"
+                }
+              }
+            ],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01JXCDWG7DAAKDGG0ZTY43N2YS",
+            "parent_id": null,
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "action/0",
+          "run_id": "f0c4c32ccd944d6e58595157305e902e",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2025-06-10T08:04:10.093915+00:00",
+            "finish": "2025-06-10T08:04:10.094732+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1748336717573",
+          "trigger": "mqtt topic homeassistant/notify"
+        }
+      },
+      {
+        "extended_dict": {
+          "last_step": "action/0",
+          "run_id": "523f1f63226bdfeefe72aeaffafa4bd5",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2025-06-10T08:04:13.124097+00:00",
+            "finish": "2025-06-10T08:04:13.125116+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1748336717573",
+          "trigger": "mqtt topic homeassistant/notify",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2025-06-10T08:04:13.124142+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.mqtt_automation_2",
+                    "state": "on",
+                    "attributes": {
+                      "id": "1748336717573",
+                      "last_triggered": "2025-06-10T08:04:10.094054+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "friendly_name": "MQTT automation"
+                    },
+                    "last_changed": "2025-06-10T07:51:22.858475+00:00",
+                    "last_reported": "2025-06-10T08:04:10.094568+00:00",
+                    "last_updated": "2025-06-10T08:04:10.094568+00:00",
+                    "context": {
+                      "id": "01JXCDWG7DAAKDGG0ZTY43N2YS",
+                      "parent_id": null,
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "mqtt",
+                    "topic": "homeassistant/notify",
+                    "payload": "ID: 1, Temp: 26.40 C, Hum: 29.00 %",
+                    "qos": 0,
+                    "description": "mqtt topic homeassistant/notify"
+                  }
+                }
+              }
+            ],
+            "action/0": [
+              {
+                "path": "action/0",
+                "timestamp": "2025-06-10T08:04:13.124371+00:00",
+                "changed_variables": {
+                  "context": {
+                    "id": "01JXCDWK647QS2008TJESG2QXV",
+                    "parent_id": null,
+                    "user_id": null
+                  }
+                },
+                "result": {
+                  "params": {
+                    "domain": "notify",
+                    "service": "persistent_notification",
+                    "service_data": {
+                      "message": "ID: 1, Temp: 26.40 C, Hum: 29.00 %"
+                    },
+                    "target": {}
+                  },
+                  "running_script": false
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1748336717573",
+            "alias": "MQTT automation",
+            "description": "Prima MQTT poruke i prikazuje notifikacije",
+            "triggers": [
+              {
+                "trigger": "mqtt",
+                "topic": "homeassistant/notify"
+              }
+            ],
+            "conditions": [],
+            "actions": [
+              {
+                "action": "notify.persistent_notification",
+                "metadata": {},
+                "data": {
+                  "message": "{{ trigger.payload }}"
+                }
+              }
+            ],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01JXCDWK647QS2008TJESG2QXV",
+            "parent_id": null,
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "action/0",
+          "run_id": "523f1f63226bdfeefe72aeaffafa4bd5",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2025-06-10T08:04:13.124097+00:00",
+            "finish": "2025-06-10T08:04:13.125116+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1748336717573",
+          "trigger": "mqtt topic homeassistant/notify"
+        }
+      }
+    ],
+    "automation.d1196845c3cd44ef92f44a1750f2f619": [
+      {
+        "extended_dict": {
+          "last_step": "action/0",
+          "run_id": "89be49214f3d8ddf6c0613b0e1bec811",
+          "state": "stopped",
+          "script_execution": "error",
+          "timestamp": {
+            "start": "2025-06-10T08:03:50.154640+00:00",
+            "finish": "2025-06-10T08:04:00.694372+00:00"
+          },
+          "domain": "automation",
+          "item_id": "d1196845c3cd44ef92f44a1750f2f619",
+          "error": "Timeout when calling resource \"http://192.168.119.59:3000/api/greenhouses/1/measurments\"",
+          "trigger": "time pattern",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2025-06-10T08:03:50.154700+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.posalji_sve_stateove_na_aplikaciju",
+                    "state": "on",
+                    "attributes": {
+                      "id": "d1196845c3cd44ef92f44a1750f2f619",
+                      "last_triggered": "2025-06-10T08:03:30.154747+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "friendly_name": "Po\u0161alji sve stateove na aplikaciju"
+                    },
+                    "last_changed": "2025-06-10T07:51:22.858969+00:00",
+                    "last_reported": "2025-06-10T08:03:40.691531+00:00",
+                    "last_updated": "2025-06-10T08:03:40.691531+00:00",
+                    "context": {
+                      "id": "01JXCDVJZSYJF3SBCVG7Y8JDXY",
+                      "parent_id": null,
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "time_pattern",
+                    "now": "2025-06-10T10:03:50.154328+02:00",
+                    "description": "time pattern"
+                  }
+                }
+              }
+            ],
+            "action/0": [
+              {
+                "path": "action/0",
+                "timestamp": "2025-06-10T08:03:50.155155+00:00",
+                "changed_variables": {
+                  "context": {
+                    "id": "01JXCDVWRAP3S0AVHHYKAHR27S",
+                    "parent_id": null,
+                    "user_id": null
+                  }
+                },
+                "error": "Timeout when calling resource \"http://192.168.119.59:3000/api/greenhouses/1/measurments\"",
+                "result": {
+                  "params": {
+                    "domain": "rest_command",
+                    "service": "send_all_states",
+                    "service_data": {},
+                    "target": {}
+                  },
+                  "running_script": false
+                }
+              }
+            ]
+          },
+          "config": {
+            "alias": "Po\u0161alji sve stateove na aplikaciju",
+            "trigger": {
+              "platform": "time_pattern",
+              "seconds": "/10"
+            },
+            "action": [
+              {
+                "action": "rest_command.send_all_states"
+              }
+            ],
+            "id": "d1196845c3cd44ef92f44a1750f2f619"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01JXCDVWRAP3S0AVHHYKAHR27S",
+            "parent_id": null,
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "action/0",
+          "run_id": "89be49214f3d8ddf6c0613b0e1bec811",
+          "state": "stopped",
+          "script_execution": "error",
+          "timestamp": {
+            "start": "2025-06-10T08:03:50.154640+00:00",
+            "finish": "2025-06-10T08:04:00.694372+00:00"
+          },
+          "domain": "automation",
+          "item_id": "d1196845c3cd44ef92f44a1750f2f619",
+          "error": "Timeout when calling resource \"http://192.168.119.59:3000/api/greenhouses/1/measurments\"",
+          "trigger": "time pattern"
+        }
+      },
+      {
+        "extended_dict": {
+          "last_step": "trigger/0",
+          "run_id": "c58dfe66ff405765d55a10858f1b06b1",
+          "state": "stopped",
+          "script_execution": "failed_single",
+          "timestamp": {
+            "start": "2025-06-10T08:04:00.153706+00:00",
+            "finish": "2025-06-10T08:04:00.154006+00:00"
+          },
+          "domain": "automation",
+          "item_id": "d1196845c3cd44ef92f44a1750f2f619",
+          "trigger": "time pattern",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2025-06-10T08:04:00.153742+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.posalji_sve_stateove_na_aplikaciju",
+                    "state": "on",
+                    "attributes": {
+                      "id": "d1196845c3cd44ef92f44a1750f2f619",
+                      "last_triggered": "2025-06-10T08:03:50.154848+00:00",
+                      "mode": "single",
+                      "current": 1,
+                      "friendly_name": "Po\u0161alji sve stateove na aplikaciju"
+                    },
+                    "last_changed": "2025-06-10T07:51:22.858969+00:00",
+                    "last_reported": "2025-06-10T08:03:50.154883+00:00",
+                    "last_updated": "2025-06-10T08:03:50.154883+00:00",
+                    "context": {
+                      "id": "01JXCDVWRAP3S0AVHHYKAHR27S",
+                      "parent_id": null,
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "time_pattern",
+                    "now": "2025-06-10T10:04:00.153572+02:00",
+                    "description": "time pattern"
+                  }
+                }
+              }
+            ]
+          },
+          "config": {
+            "alias": "Po\u0161alji sve stateove na aplikaciju",
+            "trigger": {
+              "platform": "time_pattern",
+              "seconds": "/10"
+            },
+            "action": [
+              {
+                "action": "rest_command.send_all_states"
+              }
+            ],
+            "id": "d1196845c3cd44ef92f44a1750f2f619"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01JXCDW6GSPN2ZTZ7NHG8KT11A",
+            "parent_id": null,
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "trigger/0",
+          "run_id": "c58dfe66ff405765d55a10858f1b06b1",
+          "state": "stopped",
+          "script_execution": "failed_single",
+          "timestamp": {
+            "start": "2025-06-10T08:04:00.153706+00:00",
+            "finish": "2025-06-10T08:04:00.154006+00:00"
+          },
+          "domain": "automation",
+          "item_id": "d1196845c3cd44ef92f44a1750f2f619",
+          "trigger": "time pattern"
+        }
+      },
+      {
+        "extended_dict": {
+          "last_step": "action/0",
+          "run_id": "ae27df345017da911842885cbee0887e",
+          "state": "stopped",
+          "script_execution": "error",
+          "timestamp": {
+            "start": "2025-06-10T08:04:10.153848+00:00",
+            "finish": "2025-06-10T08:04:20.692860+00:00"
+          },
+          "domain": "automation",
+          "item_id": "d1196845c3cd44ef92f44a1750f2f619",
+          "error": "Timeout when calling resource \"http://192.168.119.59:3000/api/greenhouses/1/measurments\"",
+          "trigger": "time pattern",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2025-06-10T08:04:10.153888+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.posalji_sve_stateove_na_aplikaciju",
+                    "state": "on",
+                    "attributes": {
+                      "id": "d1196845c3cd44ef92f44a1750f2f619",
+                      "last_triggered": "2025-06-10T08:03:50.154848+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "friendly_name": "Po\u0161alji sve stateove na aplikaciju"
+                    },
+                    "last_changed": "2025-06-10T07:51:22.858969+00:00",
+                    "last_reported": "2025-06-10T08:04:00.691895+00:00",
+                    "last_updated": "2025-06-10T08:04:00.691895+00:00",
+                    "context": {
+                      "id": "01JXCDW6GSPN2ZTZ7NHG8KT11A",
+                      "parent_id": null,
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "time_pattern",
+                    "now": "2025-06-10T10:04:10.153707+02:00",
+                    "description": "time pattern"
+                  }
+                }
+              }
+            ],
+            "action/0": [
+              {
+                "path": "action/0",
+                "timestamp": "2025-06-10T08:04:10.154213+00:00",
+                "changed_variables": {
+                  "context": {
+                    "id": "01JXCDWG99T7BWNDVQ4R0YJ7MT",
+                    "parent_id": null,
+                    "user_id": null
+                  }
+                },
+                "error": "Timeout when calling resource \"http://192.168.119.59:3000/api/greenhouses/1/measurments\"",
+                "result": {
+                  "params": {
+                    "domain": "rest_command",
+                    "service": "send_all_states",
+                    "service_data": {},
+                    "target": {}
+                  },
+                  "running_script": false
+                }
+              }
+            ]
+          },
+          "config": {
+            "alias": "Po\u0161alji sve stateove na aplikaciju",
+            "trigger": {
+              "platform": "time_pattern",
+              "seconds": "/10"
+            },
+            "action": [
+              {
+                "action": "rest_command.send_all_states"
+              }
+            ],
+            "id": "d1196845c3cd44ef92f44a1750f2f619"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01JXCDWG99T7BWNDVQ4R0YJ7MT",
+            "parent_id": null,
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "action/0",
+          "run_id": "ae27df345017da911842885cbee0887e",
+          "state": "stopped",
+          "script_execution": "error",
+          "timestamp": {
+            "start": "2025-06-10T08:04:10.153848+00:00",
+            "finish": "2025-06-10T08:04:20.692860+00:00"
+          },
+          "domain": "automation",
+          "item_id": "d1196845c3cd44ef92f44a1750f2f619",
+          "error": "Timeout when calling resource \"http://192.168.119.59:3000/api/greenhouses/1/measurments\"",
+          "trigger": "time pattern"
+        }
+      },
+      {
+        "extended_dict": {
+          "last_step": "trigger/0",
+          "run_id": "915c73bc73ffdfb8806c4b1074451112",
+          "state": "stopped",
+          "script_execution": "failed_single",
+          "timestamp": {
+            "start": "2025-06-10T08:04:20.153890+00:00",
+            "finish": "2025-06-10T08:04:20.154331+00:00"
+          },
+          "domain": "automation",
+          "item_id": "d1196845c3cd44ef92f44a1750f2f619",
+          "trigger": "time pattern",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2025-06-10T08:04:20.153977+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.posalji_sve_stateove_na_aplikaciju",
+                    "state": "on",
+                    "attributes": {
+                      "id": "d1196845c3cd44ef92f44a1750f2f619",
+                      "last_triggered": "2025-06-10T08:04:10.153990+00:00",
+                      "mode": "single",
+                      "current": 1,
+                      "friendly_name": "Po\u0161alji sve stateove na aplikaciju"
+                    },
+                    "last_changed": "2025-06-10T07:51:22.858969+00:00",
+                    "last_reported": "2025-06-10T08:04:10.154021+00:00",
+                    "last_updated": "2025-06-10T08:04:10.154021+00:00",
+                    "context": {
+                      "id": "01JXCDWG99T7BWNDVQ4R0YJ7MT",
+                      "parent_id": null,
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "time_pattern",
+                    "now": "2025-06-10T10:04:20.153681+02:00",
+                    "description": "time pattern"
+                  }
+                }
+              }
+            ]
+          },
+          "config": {
+            "alias": "Po\u0161alji sve stateove na aplikaciju",
+            "trigger": {
+              "platform": "time_pattern",
+              "seconds": "/10"
+            },
+            "action": [
+              {
+                "action": "rest_command.send_all_states"
+              }
+            ],
+            "id": "d1196845c3cd44ef92f44a1750f2f619"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01JXCDWT1S6HD1GMKY33JVYJJT",
+            "parent_id": null,
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "trigger/0",
+          "run_id": "915c73bc73ffdfb8806c4b1074451112",
+          "state": "stopped",
+          "script_execution": "failed_single",
+          "timestamp": {
+            "start": "2025-06-10T08:04:20.153890+00:00",
+            "finish": "2025-06-10T08:04:20.154331+00:00"
+          },
+          "domain": "automation",
+          "item_id": "d1196845c3cd44ef92f44a1750f2f619",
+          "trigger": "time pattern"
+        }
+      },
+      {
+        "extended_dict": {
+          "last_step": "action/0",
+          "run_id": "2e004b1135e5d62f9e52b1d6a0f1ad07",
+          "state": "stopped",
+          "script_execution": "error",
+          "timestamp": {
+            "start": "2025-06-10T08:04:30.153382+00:00",
+            "finish": "2025-06-10T08:04:30.158223+00:00"
+          },
+          "domain": "automation",
+          "item_id": "d1196845c3cd44ef92f44a1750f2f619",
+          "error": "ValueError: Template error: int got invalid input 'unavailable' when rendering template 'http://192.168.119.59:3000/api/greenhouses/{{ states('sensor.device_id') | int }}/measurments' but no default was specified",
+          "trigger": "time pattern",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2025-06-10T08:04:30.153541+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.posalji_sve_stateove_na_aplikaciju",
+                    "state": "on",
+                    "attributes": {
+                      "id": "d1196845c3cd44ef92f44a1750f2f619",
+                      "last_triggered": "2025-06-10T08:04:10.153990+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "friendly_name": "Po\u0161alji sve stateove na aplikaciju"
+                    },
+                    "last_changed": "2025-06-10T07:51:22.858969+00:00",
+                    "last_reported": "2025-06-10T08:04:20.691522+00:00",
+                    "last_updated": "2025-06-10T08:04:20.691522+00:00",
+                    "context": {
+                      "id": "01JXCDWT1S6HD1GMKY33JVYJJT",
+                      "parent_id": null,
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "time_pattern",
+                    "now": "2025-06-10T10:04:30.153079+02:00",
+                    "description": "time pattern"
+                  }
+                }
+              }
+            ],
+            "action/0": [
+              {
+                "path": "action/0",
+                "timestamp": "2025-06-10T08:04:30.153999+00:00",
+                "changed_variables": {
+                  "context": {
+                    "id": "01JXCDX3T9F58JWBN6J27A4BZ3",
+                    "parent_id": null,
+                    "user_id": null
+                  }
+                },
+                "error": "ValueError: Template error: int got invalid input 'unavailable' when rendering template 'http://192.168.119.59:3000/api/greenhouses/{{ states('sensor.device_id') | int }}/measurments' but no default was specified",
+                "result": {
+                  "params": {
+                    "domain": "rest_command",
+                    "service": "send_all_states",
+                    "service_data": {},
+                    "target": {}
+                  },
+                  "running_script": false
+                }
+              }
+            ]
+          },
+          "config": {
+            "alias": "Po\u0161alji sve stateove na aplikaciju",
+            "trigger": {
+              "platform": "time_pattern",
+              "seconds": "/10"
+            },
+            "action": [
+              {
+                "action": "rest_command.send_all_states"
+              }
+            ],
+            "id": "d1196845c3cd44ef92f44a1750f2f619"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01JXCDX3T9F58JWBN6J27A4BZ3",
+            "parent_id": null,
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "action/0",
+          "run_id": "2e004b1135e5d62f9e52b1d6a0f1ad07",
+          "state": "stopped",
+          "script_execution": "error",
+          "timestamp": {
+            "start": "2025-06-10T08:04:30.153382+00:00",
+            "finish": "2025-06-10T08:04:30.158223+00:00"
+          },
+          "domain": "automation",
+          "item_id": "d1196845c3cd44ef92f44a1750f2f619",
+          "error": "ValueError: Template error: int got invalid input 'unavailable' when rendering template 'http://192.168.119.59:3000/api/greenhouses/{{ states('sensor.device_id') | int }}/measurments' but no default was specified",
+          "trigger": "time pattern"
+        }
+      }
+    ],
+    "automation.1749540199971": [
+      {
+        "extended_dict": {
+          "last_step": "action/0",
+          "run_id": "3d1baa480f593737e4a75332c769e9f4",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2025-06-10T07:52:45.197928+00:00",
+            "finish": "2025-06-10T07:52:45.198938+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1749540199971",
+          "trigger": null,
+          "trace": {
+            "trigger": [
+              {
+                "path": "trigger",
+                "timestamp": "2025-06-10T07:52:45.197957+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.mqtt_switch",
+                    "state": "on",
+                    "attributes": {
+                      "id": "1749540199971",
+                      "last_triggered": null,
+                      "mode": "single",
+                      "current": 0,
+                      "friendly_name": "MQTT switch"
+                    },
+                    "last_changed": "2025-06-10T07:51:22.859035+00:00",
+                    "last_reported": "2025-06-10T07:51:22.859035+00:00",
+                    "last_updated": "2025-06-10T07:51:22.859035+00:00",
+                    "context": {
+                      "id": "01JXCD52ZBANVA0F49N42B53TP",
+                      "parent_id": null,
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "platform": null
+                  }
+                }
+              }
+            ],
+            "action/0": [
+              {
+                "path": "action/0",
+                "timestamp": "2025-06-10T07:52:45.198214+00:00",
+                "changed_variables": {
+                  "context": {
+                    "id": "01JXCD7KCDM9Q1A4RNR46K56Z5",
+                    "parent_id": "01JXCD7KCD440TYGG2V4VQYM25",
+                    "user_id": null
+                  }
+                },
+                "result": {
+                  "params": {
+                    "domain": "notify",
+                    "service": "persistent_notification",
+                    "service_data": {
+                      "message": ""
+                    },
+                    "target": {}
+                  },
+                  "running_script": false
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1749540199971",
+            "alias": "MQTT switch",
+            "description": "",
+            "triggers": [
+              {
+                "trigger": "mqtt",
+                "topic": "homeassistant/switch"
+              }
+            ],
+            "conditions": [],
+            "actions": [
+              {
+                "action": "notify.persistent_notification",
+                "metadata": {},
+                "data": {
+                  "message": "{{ trigger.payload }}"
+                }
+              }
+            ],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01JXCD7KCDM9Q1A4RNR46K56Z5",
+            "parent_id": "01JXCD7KCD440TYGG2V4VQYM25",
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "action/0",
+          "run_id": "3d1baa480f593737e4a75332c769e9f4",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2025-06-10T07:52:45.197928+00:00",
+            "finish": "2025-06-10T07:52:45.198938+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1749540199971",
+          "trigger": null
+        }
+      },
+      {
+        "extended_dict": {
+          "last_step": "action/0",
+          "run_id": "1e88065649bcd1b73e408c1e42a39474",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2025-06-10T07:53:15.731875+00:00",
+            "finish": "2025-06-10T07:53:15.732882+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1749540199971",
+          "trigger": "mqtt topic homeassistant/switch",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2025-06-10T07:53:15.731911+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.mqtt_switch",
+                    "state": "on",
+                    "attributes": {
+                      "id": "1749540199971",
+                      "last_triggered": "2025-06-10T07:52:45.197997+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "friendly_name": "MQTT switch"
+                    },
+                    "last_changed": "2025-06-10T07:51:22.859035+00:00",
+                    "last_reported": "2025-06-10T07:52:45.198844+00:00",
+                    "last_updated": "2025-06-10T07:52:45.198844+00:00",
+                    "context": {
+                      "id": "01JXCD7KCDM9Q1A4RNR46K56Z5",
+                      "parent_id": "01JXCD7KCD440TYGG2V4VQYM25",
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "mqtt",
+                    "topic": "homeassistant/switch",
+                    "payload": "on",
+                    "qos": 0,
+                    "description": "mqtt topic homeassistant/switch"
+                  }
+                }
+              }
+            ],
+            "action/0": [
+              {
+                "path": "action/0",
+                "timestamp": "2025-06-10T07:53:15.732299+00:00",
+                "changed_variables": {
+                  "context": {
+                    "id": "01JXCD8H6K2SJKKS4FNN7HSMV9",
+                    "parent_id": null,
+                    "user_id": null
+                  }
+                },
+                "result": {
+                  "params": {
+                    "domain": "notify",
+                    "service": "persistent_notification",
+                    "service_data": {
+                      "message": "on"
+                    },
+                    "target": {}
+                  },
+                  "running_script": false
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1749540199971",
+            "alias": "MQTT switch",
+            "description": "",
+            "triggers": [
+              {
+                "trigger": "mqtt",
+                "topic": "homeassistant/switch"
+              }
+            ],
+            "conditions": [],
+            "actions": [
+              {
+                "action": "notify.persistent_notification",
+                "metadata": {},
+                "data": {
+                  "message": "{{ trigger.payload }}"
+                }
+              }
+            ],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01JXCD8H6K2SJKKS4FNN7HSMV9",
+            "parent_id": null,
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "action/0",
+          "run_id": "1e88065649bcd1b73e408c1e42a39474",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2025-06-10T07:53:15.731875+00:00",
+            "finish": "2025-06-10T07:53:15.732882+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1749540199971",
+          "trigger": "mqtt topic homeassistant/switch"
+        }
+      },
+      {
+        "extended_dict": {
+          "last_step": "action/0",
+          "run_id": "a235a41c36b8d6059e9ba2da0f32c068",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2025-06-10T07:53:41.386034+00:00",
+            "finish": "2025-06-10T07:53:41.387147+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1749540199971",
+          "trigger": "mqtt topic homeassistant/switch",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2025-06-10T07:53:41.386083+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.mqtt_switch",
+                    "state": "on",
+                    "attributes": {
+                      "id": "1749540199971",
+                      "last_triggered": "2025-06-10T07:53:15.732063+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "friendly_name": "MQTT switch"
+                    },
+                    "last_changed": "2025-06-10T07:51:22.859035+00:00",
+                    "last_reported": "2025-06-10T07:53:15.732742+00:00",
+                    "last_updated": "2025-06-10T07:53:15.732742+00:00",
+                    "context": {
+                      "id": "01JXCD8H6K2SJKKS4FNN7HSMV9",
+                      "parent_id": null,
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "mqtt",
+                    "topic": "homeassistant/switch",
+                    "payload": "on",
+                    "qos": 0,
+                    "description": "mqtt topic homeassistant/switch"
+                  }
+                }
+              }
+            ],
+            "action/0": [
+              {
+                "path": "action/0",
+                "timestamp": "2025-06-10T07:53:41.386561+00:00",
+                "changed_variables": {
+                  "context": {
+                    "id": "01JXCD9A897XK1CXNSQB0QC7PR",
+                    "parent_id": null,
+                    "user_id": null
+                  }
+                },
+                "result": {
+                  "params": {
+                    "domain": "notify",
+                    "service": "persistent_notification",
+                    "service_data": {
+                      "message": "on"
+                    },
+                    "target": {}
+                  },
+                  "running_script": false
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1749540199971",
+            "alias": "MQTT switch",
+            "description": "",
+            "triggers": [
+              {
+                "trigger": "mqtt",
+                "topic": "homeassistant/switch"
+              }
+            ],
+            "conditions": [],
+            "actions": [
+              {
+                "action": "notify.persistent_notification",
+                "metadata": {},
+                "data": {
+                  "message": "{{ trigger.payload }}"
+                }
+              }
+            ],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01JXCD9A897XK1CXNSQB0QC7PR",
+            "parent_id": null,
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "action/0",
+          "run_id": "a235a41c36b8d6059e9ba2da0f32c068",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2025-06-10T07:53:41.386034+00:00",
+            "finish": "2025-06-10T07:53:41.387147+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1749540199971",
+          "trigger": "mqtt topic homeassistant/switch"
+        }
+      }
+    ],
+    "automation.virtualno_svjetlo_on_sunset": [
+      {
+        "extended_dict": {
+          "last_step": "action/0",
+          "run_id": "d9558830bcc9adab74410e9c684d6748",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2025-06-10T07:55:36.244810+00:00",
+            "finish": "2025-06-10T07:55:36.250802+00:00"
+          },
+          "domain": "automation",
+          "item_id": "virtualno_svjetlo_on_sunset",
+          "trigger": null,
+          "trace": {
+            "trigger": [
+              {
+                "path": "trigger",
+                "timestamp": "2025-06-10T07:55:36.244840+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.upali_virtualno_svjetlo_kad_sunce_zade",
+                    "state": "on",
+                    "attributes": {
+                      "id": "virtualno_svjetlo_on_sunset",
+                      "last_triggered": "2025-06-08T16:23:52.292520+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "friendly_name": "Upali virtualno svjetlo kad sunce za\u0111e"
+                    },
+                    "last_changed": "2025-06-10T07:51:22.858555+00:00",
+                    "last_reported": "2025-06-10T07:51:22.858555+00:00",
+                    "last_updated": "2025-06-10T07:51:22.858555+00:00",
+                    "context": {
+                      "id": "01JXCD52ZASD9JVJ3W3DKPSHYH",
+                      "parent_id": null,
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "platform": null
+                  }
+                }
+              }
+            ],
+            "action/0": [
+              {
+                "path": "action/0",
+                "timestamp": "2025-06-10T07:55:36.245189+00:00",
+                "changed_variables": {
+                  "context": {
+                    "id": "01JXCDCTDMZ8A86PXA8DST85QJ",
+                    "parent_id": "01JXCDCTDMQ0GKWBYGE01B8TY3",
+                    "user_id": null
+                  }
+                },
+                "result": {
+                  "params": {
+                    "domain": "light",
+                    "service": "turn_on",
+                    "service_data": {},
+                    "target": {
+                      "entity_id": [
+                        "light.virtualno_svjetlo"
+                      ]
+                    }
+                  },
+                  "running_script": false
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "virtualno_svjetlo_on_sunset",
+            "alias": "Upali virtualno svjetlo kad sunce za\u0111e",
+            "description": "Upali virtualno svjetlo 30 minuta prije zalaska sunca",
+            "triggers": [
+              {
+                "event": "sunset",
+                "offset": "00:00:00",
+                "trigger": "sun"
+              }
+            ],
+            "actions": [
+              {
+                "target": {
+                  "entity_id": "light.virtualno_svjetlo"
+                },
+                "action": "light.turn_on",
+                "data": {}
+              }
+            ],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01JXCDCTDMZ8A86PXA8DST85QJ",
+            "parent_id": "01JXCDCTDMQ0GKWBYGE01B8TY3",
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "action/0",
+          "run_id": "d9558830bcc9adab74410e9c684d6748",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2025-06-10T07:55:36.244810+00:00",
+            "finish": "2025-06-10T07:55:36.250802+00:00"
+          },
+          "domain": "automation",
+          "item_id": "virtualno_svjetlo_on_sunset",
+          "trigger": null
+        }
+      }
+    ]
+  }
+}

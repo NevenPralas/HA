@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "minor_version": 9,
+  "key": "core.device_registry",
+  "data": {
+    "devices": [
+      {"area_id":null,"config_entries":["01JW6C39PM4D8PN3JR4DJX94G3"],"config_entries_subentries":{"01JW6C39PM4D8PN3JR4DJX94G3":[null]},"configuration_url":null,"connections":[],"created_at":"2025-05-26T13:21:47.224736+00:00","disabled_by":null,"entry_type":"service","hw_version":null,"id":"c081b754733e96eff613f3bab0d58c6c","identifiers":[["sun","01JW6C39PM4D8PN3JR4DJX94G3"]],"labels":[],"manufacturer":null,"model":null,"model_id":null,"modified_at":"2025-05-26T13:21:47.224850+00:00","name_by_user":null,"name":"Sun","primary_config_entry":"01JW6C39PM4D8PN3JR4DJX94G3","serial_number":null,"sw_version":null,"via_device_id":null},
+      {"area_id":null,"config_entries":["01JW6C3CMPMCB2T92M369Y9446"],"config_entries_subentries":{"01JW6C3CMPMCB2T92M369Y9446":[null]},"configuration_url":"homeassistant://config/backup","connections":[],"created_at":"2025-05-26T13:21:50.563589+00:00","disabled_by":null,"entry_type":"service","hw_version":null,"id":"8c1d055cb60f683cf14e8cfa593048fc","identifiers":[["backup","backup_manager"]],"labels":[],"manufacturer":"Home Assistant","model":"Home Assistant Backup","model_id":null,"modified_at":"2025-05-26T13:21:50.563647+00:00","name_by_user":null,"name":"Backup","primary_config_entry":"01JW6C3CMPMCB2T92M369Y9446","serial_number":null,"sw_version":"2025.5.3","via_device_id":null},
+      {"area_id":null,"config_entries":["01JW6CEYAB36JP1Y949CN24KV8"],"config_entries_subentries":{"01JW6CEYAB36JP1Y949CN24KV8":[null]},"configuration_url":"https://www.met.no/en","connections":[],"created_at":"2025-05-26T13:28:09.351630+00:00","disabled_by":null,"entry_type":"service","hw_version":null,"id":"f78a5c4de872f664b740990817879ef4","identifiers":[["met","01JW6CEYAB36JP1Y949CN24KV8"]],"labels":[],"manufacturer":"Met.no","model":"Forecast","model_id":null,"modified_at":"2025-05-26T13:28:09.353399+00:00","name_by_user":null,"name":"Forecast","primary_config_entry":"01JW6CEYAB36JP1Y949CN24KV8","serial_number":null,"sw_version":null,"via_device_id":null}
+    ],
+    "deleted_devices": []
+  }
+}

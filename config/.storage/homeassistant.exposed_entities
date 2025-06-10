@@ -1,0 +1,143 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "homeassistant.exposed_entities",
+  "data": {
+    "assistants": {},
+    "exposed_entities": {
+      "conversation.home_assistant": {
+        "assistants": {
+          "conversation": {
+            "should_expose": false
+          }
+        }
+      },
+      "zone.home": {
+        "assistants": {
+          "conversation": {
+            "should_expose": false
+          }
+        }
+      },
+      "sun.sun": {
+        "assistants": {
+          "conversation": {
+            "should_expose": false
+          }
+        }
+      },
+      "automation.turn_on_light_at_sunset": {
+        "assistants": {
+          "conversation": {
+            "should_expose": false
+          }
+        }
+      },
+      "automation.turn_off_light_at_sunrise": {
+        "assistants": {
+          "conversation": {
+            "should_expose": false
+          }
+        }
+      },
+      "sensor.vlaga_zraka": {
+        "assistants": {
+          "conversation": {
+            "should_expose": false
+          }
+        }
+      },
+      "sensor.temperatura_zraka": {
+        "assistants": {
+          "conversation": {
+            "should_expose": false
+          }
+        }
+      },
+      "number.servo_tower_pro_sg90": {
+        "assistants": {
+          "conversation": {
+            "should_expose": false
+          }
+        }
+      },
+      "light.virtualno_svjetlo": {
+        "assistants": {
+          "conversation": {
+            "should_expose": true
+          }
+        }
+      },
+      "automation.posalji_sve_stateove_na_aplikaciju": {
+        "assistants": {
+          "conversation": {
+            "should_expose": false
+          }
+        }
+      },
+      "sensor.temperatura_zraka_2": {
+        "assistants": {
+          "conversation": {
+            "should_expose": false
+          }
+        }
+      },
+      "number.servo_tower_pro_sg90_2": {
+        "assistants": {
+          "conversation": {
+            "should_expose": false
+          }
+        }
+      },
+      "light.navodnjavanje": {
+        "assistants": {
+          "conversation": {
+            "should_expose": true
+          }
+        }
+      },
+      "light.dan_noc": {
+        "assistants": {
+          "conversation": {
+            "should_expose": true
+          }
+        }
+      },
+      "sensor.device_id": {
+        "assistants": {
+          "conversation": {
+            "should_expose": false
+          }
+        }
+      },
+      "number.kolega_servo_motor": {
+        "assistants": {
+          "conversation": {
+            "should_expose": false
+          }
+        }
+      },
+      "sensor.kolega_servo_pozicija": {
+        "assistants": {
+          "conversation": {
+            "should_expose": false
+          }
+        }
+      },
+      "number.servo_motor": {
+        "assistants": {
+          "conversation": {
+            "should_expose": false
+          }
+        }
+      },
+      "sensor.servo_pozicija": {
+        "assistants": {
+          "conversation": {
+            "should_expose": false
+          }
+        }
+      }
+    }
+  }
+}
